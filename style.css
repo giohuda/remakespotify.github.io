@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Dela+Gothic+One&family=PT+Sans&family=Poppins:ital,wght@0,300;0,400;1,300;1,500&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    display: flex;
+    background-color: black;
+    height: 5rem;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7vw;
+}
+
+.nav img {
+    max-height: 2.5rem;
+}
+
+.nav ul {
+    display: inline;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+.nav li a:hover {
+    color: #1ed760;
+}
+
+.ungu {
+    background-color: #993399;
+    display: flex;
+    color: white;
+    padding: 5vw 7vw;
+    justify-content: space-between;
+}
+.tulisan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ungu h1,
+.ungu h3,
+.ungu button,
+.ungu p {
+    margin-top: 2rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.ungu img{
+    max-width: 25rem;
+}
+
+.ungu h4 {
+    font-size: 1vmax;
+}
+.ungu h1 {
+    font-size: 3.5vmax;
+}
+.ungu h3 {
+    font-size: 1.5vmax;
+}
+.ungu p {
+    font-size: 0.7vmax;
+}
+.ungu button {
+    background-color: black;
+    border: solid black;
+    width: 40%;
+    padding: .8rem;
+    border-radius: 4rem;
+}
+/* .ungu button:hover {
+    pop up
+} */
+.ungu p a {
+    text-decoration: underline;
+}
+
+.free {
+    background-image: url(https://content-tooling.spotifycdn.com/images/b236bf87-bfd5-4bcb-b51a-77881073039c_lie_circles.svg);
+    background-size: cover;
+    background-color: rgb(41, 65, 171);
+    color: #1ed760;
+    padding: 5vw 7vw 15vw 7vw;
+    /* padding: 5rem 7rem 15rem 7rem; */
+}
+
+.free h4 {
+    font-size: 1vmax;
+}
+.free h1 {
+    font-size: 3.5vmax;
+}
+.free h3 {
+    font-size: 1.5vmax;
+}
+.free button {
+    background-color: #1ed760;
+    border: solid #1ed760;
+    max-width: 20%;
+    padding: .8rem;
+    border-radius: 4rem;
+}
+.free button a {
+    color: rgb(41, 65, 171);
+}
+.free h1,
+.free h3,
+.free button,
+.free p {
+    margin-top: 2rem;
+}
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 5vw 7vw;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.logo img {
+    height: 2.5rem;
+}
+.bungkus {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.perusahaan {
+    display: flex;
+    flex-direction: column;
+}
+.komunitas {
+    display: flex;
+    flex-direction: column; 
+}
+.tautan {
+    display: flex;
+    flex-direction: column; 
+}
+.footer .grey {
+    margin-top: 1rem;
+    color: rgb(177, 169, 169);
+}
+.footer a {
+    font-size: 1vmax;
+    margin-top: 1.5rem;
+}
+.footer p {
+    font-size: 1vmax;
+}
+.footer a:hover {
+    color: #1ed760;
+}
+.sosmed {
+    display: flex;
+}
+.bunder img {
+    padding: 0;
+    width: 2.5rem;
+}
+
+.lainnya {
+    font-size: 0.9vmax;
+    background-color: black;
+    color: rgb(160, 154, 154);
+    display: flex;
+    padding: 2vw 7vw;
+    justify-content: space-between;
+}
+.ling {
+    line-height: 2rem;
+}
+.ling .hukum {
+    margin: 0.7rem 0.7rem 0.7rem 0;
+    color: rgb(160, 154, 154);
+}
+.ling a {
+    margin: 0.7rem;
+    color: rgb(160, 154, 154);
+}
+.ling a:hover {
+    color: #1ed760;
+}
+.indonesia {
+    margin-left: 2.5rem;
+}
+
+.hamburger {
+    position: relative;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hamburger input {
+    position: absolute;
+    height: 1.2rem;
+    width: 1.5rem;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 1.5rem;
+    transition: all .5s;
+}
+
+/* Hamburger menu animation */
+.hamburger span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.hamburger span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.hamburger input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px,-1px);
+}
+
+.hamburger input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px,0);
+}
+
+.hamburger input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+@media screen and (max-width:767px){
+    .ungu button {
+        width: 100%;
+    }
+    .bungkus {
+        flex-direction: column;
+    }
+    .komunitas {
+        margin-top: 2rem; 
+    }
+    .tautan {
+        margin-top: 2rem; 
+    }
+}
+
+@media screen and (max-width:991px){
+    .nav ul {
+        font-size: 1.5vmax;
+        width: 40%;
+        height: 45vh;
+        background-color: black;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    .nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .nav {
+        height: 3.5rem;
+    }
+    .nav img {
+        max-height: 1.7rem;
+    }
+    .ungu {
+        flex-direction: column;
+    }
+    .ungu .tulisan h4 {
+        text-align: center;
+    }
+    .ungu img {
+        margin: 2.5rem auto 0rem auto;
+        max-width: 20rem;
+    }
+    
+    .free h4,
+    .free h1,
+    .free h3 
+    { 
+        text-align: center;
+    }
+    .free button {
+        margin: auto;
+        max-width: 100%;
+        margin-top: 3rem;
+        padding: .8rem 1.5rem;
+        display: flex;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .bungkus {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+    .sosmed {
+        margin-top: 3rem;
+    }
+    .lainnya {
+        padding: 2vw 7vw;
+    }
+
+
+}
+
+@media screen and (min-width:992px){
+    .hamburger {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
